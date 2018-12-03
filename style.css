@@ -1,0 +1,222 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    margin:0;
+}
+.sidebar{
+    background-color: forestgreen;
+    height:100%;
+    top:0;
+    left:0;
+    width:300px;
+    text-align: center;
+    float:left;
+    position:fixed;
+    box-shadow: 0 0 15px black;
+}
+.sidebar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color:lightgreen;
+    font-size:18px;
+    padding:16px 25px;
+    display:block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sidebar ul li a:hover{
+    color:white;
+    background-color: lightgreen;
+}
+.sidebar img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border:10px solid lightgreen;
+    border-top:10px solid green;
+    margin-top:100px;
+    box-shadow: 0 0 15px black;
+    animation:spin 2s infinite linear;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+           
+
+#about-section{
+    margin: 150px 0 200px 300px;
+    padding: 20px;
+}
+.about-article h1{
+    font-family: "Chakra Petch", sans-serif;
+    font-size:50px;
+    margin:0;
+    text-shadow: 0 0 5px black;
+}
+.about-article .fname{
+    color:rgb(9, 37, 9);
+}
+.about-article .lname{
+    color:rgb(53, 131, 53);
+}
+.about-article h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+.about-article p{
+    font-size: 20px;
+    color: #818283;
+}
+
+
+#exp-section{
+    margin: 150px 0 200px 300px;
+    padding: 20px;
+}
+.main-heading{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+}
+.exp-article{
+    width: 300px;
+    display: inline-block;
+    padding: 10px;
+    
+}
+.exp-article h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+}
+.exp-article p{
+    font-size: 20px;
+    color: #818283;
+    text-align: justify;
+}
+.exp-button{
+    background-color: #bd5d38;
+    color: white;
+    border: none;
+    font-family: "Anton", sans-serif;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+#education-section{
+    margin: 150px 0 200px 300px;
+    padding: 20px;
+}
+.edu-article{
+    background-color: forestgreen;
+    padding:20px;
+    margin:5px;
+    border:2px solid white;
+    box-shadow: 0 0 15px black;
+    border-radius: 20px;
+    color:white;
+    
+}
+.edu-article:hover{
+    transform: perspective(1000px) rotateX(20deg);
+}
+.edu-article h3{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+.edu-article p{
+    font-size: 20px;
+}
+
+#skills-section{
+    margin-left: 300px;
+    padding: 20px;
+}
+.skills-article{
+    background-color: #e6e7e2;
+    border: 5px solid forestgreen;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+}
+.skills-article h3{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: forestgreen;
+}
+.skills-article .fab{
+    color: black;
+    padding: 0 20px 0 20px;
+}
+.skills-article .fab:hover{
+    color: lightgreen;
+
+}
+
+/* ----------------- Interests Section ----------- */
+#interests-section{
+    margin-left: 300px;
+    padding: 20px;
+}
+.interests-article{
+    background-color: #e6e7e2;
+    border: 5px solid forestgreen;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+}
+.interests-article h3{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: forestgreen;
+}
+.interests-article .fas{
+    color: black;
+    padding: 0 20px 0 20px;
+}
+.interests-article .fas:hover{
+    color: lightgreen;
+
+}
+#certification-section{
+    margin-left: 300px;
+    padding: 20px;
+}
+.cert-text{
+    font-size: 20px;
+    color: #818283;
+}
+.certification-article{
+    text-align: center;
+    border: 2px solid #bd5d38;
+    width: 220px;
+    display: inline-block;
+    margin: 50px 5px 5px 5px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.certification-article:hover{
+    background-color: #bd5d38;
+    box-shadow: 0 0 15px #bd5d38;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.certification-article:hover p{
+    color: white;
+}
+.certification-article img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+.certification-article p{
+    padding: 10px;
+    font-size: 16px;
+}
